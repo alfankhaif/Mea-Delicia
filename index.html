@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <title>Mea Delicia</title>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <audio id="audio" src="./b.mp3" loop autoplay></audio>
+    
+      <video id="vidi" class="video-background" loop autoplay>
+        <source src="./a.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  
+     <div id="clock">00:00:00</div>
+     <button id="playPauseBtn" onclick="playPauseAudio()">
+        <img id="playPauseImg" src="./pause.svg" width="20" height="25">
+     </button>
+     <button id="slider" type="range"><input type="range" id="vc" min="0" max="1" step="0.01" value="1" oninput="changeVolume()">
+     </button>
+  
+    <p id="about-text">About You - 1975</p>
+    <div id="daysAfter"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
