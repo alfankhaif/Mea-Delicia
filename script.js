@@ -1,5 +1,5 @@
 var video = document.getElementById("vidi");
-video.playbackRate = 7;
+video.playbackRate = 1;
 video.muted = true;
 
 function updateClock() {
