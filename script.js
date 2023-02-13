@@ -17,6 +17,10 @@ function addZero(num) {
 
 var audio = document.getElementById("audio");
 
+if (audio.paused) {
+  audio.play();
+}
+
 function playPauseAudio() {
   if (audio.paused) {
     audio.play();
