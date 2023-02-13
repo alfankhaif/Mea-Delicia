@@ -7,7 +7,7 @@
           width: 100%;
           object-fit: cover;
           object-position: center;
-          filter: blur(5px) grayscale(50%);
+          filter: blur(10px) grayscale(100%);
         }
 
         #clock {
