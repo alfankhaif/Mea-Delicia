@@ -21,6 +21,12 @@ if (audio.paused) {
   audio.play();
 }
 
+try {
+  audio.play();
+} catch (e) {
+  console.error(e);
+}
+
 function playPauseAudio() {
   if (audio.paused) {
     audio.play();
