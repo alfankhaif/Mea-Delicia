@@ -41,28 +41,33 @@
     <title>spotify-playlist</title>
   </head>
   <body>
+    <!-- First playlist iframe -->
     <div class="playlist">
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4YBOSOkYf341Jmst1XQMWY?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
+    <!-- Text -->
     <div class="text">
       <p>It's from the way that you move</p>
       <p>And everything that you do</p>
       <p>And after that it's when I realize</p>
       <p>That I love you</p>
     </div>
+    <!-- Second playlist iframe -->
     <div class="playlist">
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2QpPAgfanbQ5V7JWUbYRnL?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
+    <!-- Timer countdown for redirecting to another page -->
     <div class="timer" id="timer">Redirecting in 10 seconds...</div>
-      <script>
-        var seconds = 17;
-        setInterval(function() {
-          seconds--;
-          document.getElementById("timer").innerHTML = "Redirecting in " + seconds + " seconds...";
-        }, 1000);
-        setTimeout(function(){
-          window.location.href = "hi.html";
-        }, 17000);
-      </script>
+    <script>
+      // Set a timer for redirecting after 17 seconds
+      var seconds = 17;
+      setInterval(function() {
+        seconds--;
+        document.getElementById("timer").innerHTML = "Redirecting in " + seconds + " seconds...";
+      }, 1000);
+      setTimeout(function(){
+        window.location.href = "hi.html";
+      }, 17000);
+    </script>
   </body>
 </html>
